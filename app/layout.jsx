@@ -1,8 +1,4 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from '@/app/components/Navbar'
-import Footer from '@/app/components/Footer'
-import { LayoutProvider } from '@/app/components/LayoutPrivider'
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,13 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     	<body className='flex flex-col bg-[#fff] min-h-[100vh] pt-20'>
-        <LayoutProvider>
-			  	{/* <Navbar /> */}
 			  	<main>
             {children}
 			  	</main>
-          {/* <Footer /> */}
-        </LayoutProvider>
     	</body>
     </html>
   )
